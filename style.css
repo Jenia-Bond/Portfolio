@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #32a095;
+  --secondary-color: #21484e;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+  max-width: 1920px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+li {
+  list-style: none;
+}
+.hello {
+  margin: 0 auto;
+}
+.dot {
+  color: #21484e;
+}
+.top-header {
+  font-size: 128px;
+  font-weight: bold;
+
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.bottom-header {
+  font-size: 128px;
+  font-weight: bold;
+
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+.iam-header {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Julius Sans One", sans-serif;
+  padding-top: 40px;
+}
+.name-header {
+  text-align: center;
+  font-size: 64px;
+  line-height: 1;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.top {
+  padding: 80px;
+  background-image: url("pics/header-back.png");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 50%;
+}
+
+.center {
+  background-color: #32a095;
+  color: white;
+  padding: 40px;
+}
+.center h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.center p {
+  font-size: 24px;
+}
+.about-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.education-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.education-section-text {
+  font-size: 36px;
+  font-family: "Inter", sans-serif;
+}
+.coder,
+.designer {
+  padding: 30px;
+  width: 500px;
+}
+.myworks-button {
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  box-shadow: var(--box-shadow);
+  transition: 200ms ease;
+  margin: auto;
+  display: block;
+}
