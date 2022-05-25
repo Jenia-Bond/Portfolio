@@ -85,9 +85,8 @@ li {
   padding: 30px;
   width: 500px;
 }
-.myworks-button {
+.myworks-link {
   background-color: transparent;
-  text-align: center;
   border: 2px solid white;
   border-radius: 4px;
   padding: 15px 20px;
@@ -97,7 +96,14 @@ li {
   box-shadow: var(--box-shadow);
   transition: 200ms ease;
   margin: auto;
-  display: block;
+}
+.myworks-link:hover {
+  background-color: white;
+  color: #21484e;
+  border: 2px solid #21484e;
+}
+.center-text {
+  text-align: center;
 }
 
 .footer {
@@ -107,6 +113,10 @@ li {
 i {
   font-size: 40px;
   padding: 6px;
+  color: white;
+}
+a:visited {
+  color: white;
 }
 
 @media only screen and (max-width: 1300px) {
