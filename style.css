@@ -2,14 +2,14 @@
   --primary-color: #32a095;
   --secondary-color: #21484e;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --main-font: "Inter", sans-serif;
+  --accent-font: "Julius Sans One", sans-serif;
 }
+
 body {
-  max-width: 1920px;
+  max-width: 1900px;
 }
-.container {
-  display: flex;
-  justify-content: center;
-}
+
 li {
   list-style: none;
 }
@@ -17,13 +17,12 @@ li {
   margin: 0 auto;
 }
 .dot {
-  color: #21484e;
+  color: var(--secondary-color);
 }
 .top-header {
   font-size: 128px;
   font-weight: bold;
-
-  font-family: "Inter", sans-serif;
+  font-family: var(--main-font);
   margin: 0;
 }
 .bottom-header {
@@ -31,19 +30,19 @@ li {
   font-weight: bold;
 
   line-height: 1;
-  font-family: "Inter", sans-serif;
+  font-family: var(--main-font);
 }
 .iam-header {
   text-align: center;
   font-size: 48px;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: var(--accent-font);
   padding-top: 40px;
 }
 .name-header {
   text-align: center;
   font-size: 64px;
   line-height: 1;
-  font-family: "Julius Sans One", sans-serif;
+  font-family: var(--accent-font);
 }
 
 .top {
@@ -72,13 +71,14 @@ li {
   display: flex;
   justify-content: space-evenly;
 }
-.education-section {
-  display: flex;
-  justify-content: space-evenly;
+.abilities {
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
 }
-.education-section-text {
-  font-size: 36px;
-  font-family: "Inter", sans-serif;
+.education-section {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--secondary-color);
 }
 .coder,
 .designer {
@@ -98,4 +98,65 @@ li {
   transition: 200ms ease;
   margin: auto;
   display: block;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+i {
+  font-size: 40px;
+  padding: 6px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .iam-header,
+  .name-header {
+    font-size: 48px;
+  }
+  .top-header,
+  .bottom-header {
+    font-size: 96px;
+  }
+  .top {
+    padding-top: 50px;
+    background: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .center p {
+    font-size: 14px;
+  }
+  .education-section {
+    font-size: 18px;
+  }
+}
+
+.projects-top {
+  padding: 80px;
+  background-image: url("pics/projects-back.png");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  height: 700px;
+}
+.projects-header {
+  padding-top: 200px;
+  padding-left: 800px;
+}
+.primary-link {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
+  transition: all 200ms ease;
+}
+.primary-link:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
 }
