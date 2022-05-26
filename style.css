@@ -9,12 +9,21 @@ h2 {
   text-decoration: underline;
 }
 
+li {
+  list-style: none;
+}
+.footer i {
+  font-size: 40px;
+  padding: 6px;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
 .list-type {
   padding: 0;
   font-size: 18px;
-}
-li {
-  list-style: none;
 }
 .hello {
   margin: 0 auto;
@@ -23,18 +32,18 @@ li {
   color: var(--secondary-color);
   font-weight: 500;
 }
-.top-header {
-  font-size: 128px;
+
+.top-header,
+.bottom-header {
   font-weight: bold;
   font-family: var(--main-font);
+  font-size: 128px;
+}
+.top-header {
   margin: 0;
 }
 .bottom-header {
-  font-size: 128px;
-  font-weight: bold;
-
   line-height: 1;
-  font-family: var(--main-font);
 }
 .iam-header {
   text-align: center;
@@ -49,7 +58,7 @@ li {
   font-family: var(--accent-font);
 }
 
-.top {
+.top-section {
   padding: 80px;
   background-image: url("pics/header-back.png");
   background-origin: border-box;
@@ -70,12 +79,6 @@ li {
 }
 .center p {
   font-size: 24px;
-}
-
-.education-section {
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--secondary-color);
 }
 
 .myworks-link {
@@ -103,41 +106,6 @@ li {
   background-color: black;
   color: white;
 }
-i {
-  font-size: 40px;
-  padding: 6px;
-  color: white;
-}
-a:visited {
-  color: white;
-}
-
-@media only screen and (max-width: 1200px) {
-  .iam-header,
-  .name-header {
-    font-size: 48px;
-  }
-  .top-header,
-  .bottom-header {
-    font-size: 96px;
-  }
-  .top {
-    padding-top: 50px;
-    background: none;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .center p {
-    font-size: 18px;
-  }
-  .education-section {
-    font-size: 18px;
-  }
-  .projects-header {
-    display: none;
-  }
-}
 
 .projects-body {
   padding: 80px;
@@ -150,6 +118,9 @@ a:visited {
 .projects-header {
   padding-top: 100px;
   padding-left: 800px;
+}
+.project {
+  padding: 50px 30px;
 }
 
 .primary-link {
@@ -169,9 +140,69 @@ a:visited {
   background-color: transparent;
 }
 .projects-header-small {
+  padding: 30px;
+}
+.hero-header-small {
   padding: 0;
 }
 .top-header-small,
 .bottom-header-small {
-  font-size: 96px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .iam-header,
+  .name-header {
+    font-size: 48px;
+  }
+  .top-header,
+  .bottom-header {
+    font-size: 96px;
+  }
+  .top-section {
+    padding-top: 50px;
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .center p {
+    font-size: 18px;
+  }
+  .top-section {
+    padding: 20px;
+  }
+  .hero-body {
+    padding: 20px;
+  }
+  .iam-header {
+    font-size: 32px;
+    padding-top: 0;
+  }
+  .name-header {
+    font-size: 44px;
+  }
+  .education-section {
+    font-size: 18px;
+  }
+  .top-header,
+  .bottom-header {
+    font-size: 70px;
+    line-height: 1;
+  }
+  .projects-header {
+    display: none;
+  }
+  .hero-header {
+    display: none;
+  }
+  .project {
+    padding: 10px;
+    text-align: center;
+  }
+  .projects-body {
+    padding: 20px;
+    height: 400px;
+  }
 }
