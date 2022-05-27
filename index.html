@@ -38,30 +38,11 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            >
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-          </div>
-        </div>
-      </div>
+    <nav class="navigation pe-5 d-flex justify-content-end">
+      <a href="index.html" class="navigation-link"> Home</a>
+      <a href="about.html" class="navigation-link"> About</a>
+      <a class="navigation-link" href="projects.html"> Projects</a>
+      <a class="navigation-link" href="contact.html"> Contact</a>
     </nav>
 
     <div class="top-section">
@@ -111,9 +92,11 @@
     </div>
 
     <div class="container">
-      <div class="d-flex justify-content-evenly">
-        <div class="m-4">
-          <h2 class="mb-4">EDUCATION</h2>
+      <div class="row p-4">
+        <div class="col-sm-2">
+          <h2>EDUCATION</h2>
+        </div>
+        <div class="col-sm-4">
           <ul class="list-type">
             <li>
               <span class="dot">Jan 11</span> - Kyiv Institute for enterpreters
@@ -128,8 +111,10 @@
           </ul>
         </div>
 
-        <div class="m-4">
-          <h2 class="mb-4">SKILLS</h2>
+        <div class="col-sm-2">
+          <h2>SKILLS</h2>
+        </div>
+        <div class="col-sm-4">
           <ul class="list-type">
             <li><i class="fa-brands fa-html5"></i> HTML</li>
             <li><i class="fa-brands fa-css3"></i> CSS</li>
